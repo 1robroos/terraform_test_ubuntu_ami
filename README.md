@@ -1,4 +1,4 @@
-#testing latest ubuntu ami's on terraform
+# testing latest ubuntu ami's on terraform
 
 Suddenly I received errors like;
 ~~~
@@ -11,7 +11,7 @@ The code I used ( and worked ) was :
 data "aws_ami" "app-ami" {
   most_recent = true
 
-  # ubuntu ami account ID
+  /*  ubuntu ami account ID */
   owners = ["099720109477"]
 }
 
