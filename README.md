@@ -1,4 +1,4 @@
-#testing latest ubuntu ami's on terraform
+# testing latest ubuntu ami's on terraform
 
 Suddenly I received errors like;
 ~~~
