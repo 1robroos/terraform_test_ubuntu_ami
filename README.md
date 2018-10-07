@@ -11,9 +11,10 @@ The code I used ( and worked ) was :
 data "aws_ami" "app-ami" {
   most_recent = true
 
-  /*  ubuntu ami account ID */
+  /*   ubuntu ami account ID */
   owners = ["099720109477"]
 }
+~~~
 
 This resulted in ami eu-central-1 --image-ids ami-0a6cd0a80fba6b4d0 where "RootDeviceType": "instance-store"
 WIth the instance-type t2.micro this won't work.
@@ -35,7 +36,7 @@ So the simplest solution would be not to rely anymore on only the most_recent = 
 ~~~
 data "aws_ami" "app-ami" {
   most_recent = true
-  # ubuntu ami account ID
+  /* ubuntu ami account ID */
 owners = ["099720109477"]
 filter {
   name   = "name"
